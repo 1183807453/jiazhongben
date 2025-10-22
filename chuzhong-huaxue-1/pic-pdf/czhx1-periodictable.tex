@@ -1,0 +1,28 @@
+\documentclass[UTF8, 10pt, oneside]{ctexart}
+\usepackage{CJKfntef}
+\usepackage[height=22.2cm]{geometry}
+
+\usepackage{fontspec}
+\usepackage{lscape}
+\usepackage[userlang=zh]{pgf-PeriodicTable}
+\usepackage[graphics,tightpage,active]{preview}
+
+% 使用 SimSun 字体
+\xeCJKsetup{AutoFallBack=true}
+\setCJKmainfont{SimSun}[FallBack=SimSun-ExtB]
+
+% 使用 MiSan 字体
+% \xeCJKsetup{AutoFallBack=true,AutoFakeBold,AutoFakeSlant}
+% \setCJKmainfont{MiSans}[FallBack={MiSans L3}]
+
+% 使用 BabelStone Han 字体
+% \setCJKmainfont{BabelStone Han}
+
+\begin{document}
+\PreviewEnvironment{landscape}
+\begin{landscape}
+    \pgfPT[show title=false]             % 生成有背景色的元素表
+    % \pgfPT[csSolid, show title=false]  % 生成没有背景色的元素表
+\end{landscape}
+
+\end{document}

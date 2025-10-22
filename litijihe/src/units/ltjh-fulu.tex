@@ -1,0 +1,56 @@
+\ctexset{
+    chapter/number = ,
+}
+
+\chapter{公式表}\label{ch:gongshibiao}
+
+\textbf{第一章} \quad 异面直线上两点间距离公式
+$$ EF = \sqrt{d^2 + m^2 + n^2 \pm 2mn \cos\theta} \juhao $$
+
+\textbf{第二章}
+
+
+\begin{table}[htbp]
+    \centering
+    \begin{tblr}{
+        hline{1,11}={1.5pt,solid},
+        hline{2,6}={solid},
+        vline{1,4}={1.5pt,solid},
+        vline{2,3}={solid},
+        row{3-5,9,10}={belowsep+=.5em},
+        row{1}={c},
+    }
+        图形 & 侧面积公式 & 体积公式 \\
+        \SetCell[r=4]{c} 多面体
+            & $S_\text{直棱柱侧} = ch$ &  $V_\text{棱柱} = Sh$ \\
+            & $S_\text{正棱锥侧} = \exdfrac{1}{2} ch'$ & $V_\text{棱锥} = \exdfrac{1}{3} Sh$ \\
+            & $S_\text{正棱台侧} = \exdfrac{1}{2} (c + c') h'$ & $V_\text{棱台} = \exdfrac{1}{3} h (S + \sqrt{SS'} + S')$ \\
+            &                                                 & $V_\text{拟柱体} = \exdfrac{1}{6} h (S + 4S_0 + S')$ \\
+        \SetCell[r=5]{c} 旋转体
+            & $\begin{aligned}[t]
+                S_\text{圆柱} &= c \, l \\
+                            & = 2 \pi rl
+            \end{aligned}$ & $V_\text{圆柱} = \pi r^2h$ \\
+            & $\begin{aligned}[t]
+                S_\text{圆锥} &= \exdfrac{1}{2} c \, l \\
+                            & = \pi rl
+            \end{aligned}$ & $V_\text{圆锥} = \exdfrac{1}{3} \pi r^2h$ \\
+            & $\begin{aligned}[t]
+                S_\text{圆台} &= \exdfrac{1}{2} (c + c') \, l \\
+                            & = \pi (r + r') \, l
+            \end{aligned}$ & $V_\text{圆台} = \exdfrac{1}{3} \pi h (r^2 + rr' + r'\,^2) $ \\
+            & $S_\text{球} = 4 \pi R^2$ & $V_\text{球} = \exdfrac{4}{3} \pi R^3$ \\
+            & $\begin{aligned}[t]
+                S_\text{球冠} &= 2 \pi Rh \\
+                            & = \pi (r^2 + h^2)
+            \end{aligned}$ & $\begin{aligned}[t]
+                V_\text{球缺} &= \exdfrac{1}{3} \pi h^2 (3R - h) \\[.5em]
+                            & = \exdfrac{1}{6} \pi h (3r^2 + h^2)
+            \end{aligned}$
+    \end{tblr}
+\end{table}
+
+
+\textbf{第三章} \quad 欧拉公式
+$$ V + F - E = 2 \juhao $$
+
